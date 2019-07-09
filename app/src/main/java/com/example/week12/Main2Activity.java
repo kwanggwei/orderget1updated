@@ -69,7 +69,7 @@ public class Main2Activity extends AppCompatActivity {
         Pattern passwordPattern;
         Matcher passwordMatcher;
 
-        final String PASSWORD_PATTERN="^(?=.*[0-9])(?=.[a-zA-Z])(?=.*[!@#$%]).{6,12}$";;
+        final String PASSWORD_PATTERN="^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%]).{6,12}$";;
         passwordPattern = Pattern.compile(PASSWORD_PATTERN);
         passwordMatcher = passwordPattern.matcher(password);
 
