@@ -1,4 +1,4 @@
-package com.example.week12;
+package com.shawn.order;
 
 public class UserData {
     private  String MyUsername;

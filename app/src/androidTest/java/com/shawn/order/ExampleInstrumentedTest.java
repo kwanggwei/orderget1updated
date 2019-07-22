@@ -1,4 +1,4 @@
-package com.example.week12;
+package com.shawn.order;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
