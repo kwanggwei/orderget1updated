@@ -15,8 +15,8 @@ import android.widget.TextView;
 
 public class MainFragment extends Fragment {
 
-    String[] menuItems = {"Grilled Chicken", "Black Pepper Chicken", "Hickory BBQ Chicken", "Lemon Lime Chicken", "Golden Fried Chicken", "Honey Bourbon Ribs", "Lamb T Bone", "Pork Chops", "Golden Fried Fish", "Fish & Chips", "Grilled Fish w Herbs", "Grilled Salmon Fillet", "Wagyu Beef Burger"};
-    int[] images = {R.drawable.image1, R.drawable.image1,R.drawable.image1,R.drawable.image1,R.drawable.image1,R.drawable.image1,R.drawable.image1,R.drawable.image1,R.drawable.image1,R.drawable.image1,R.drawable.image1,R.drawable.image1,R.drawable.image1};
+    String[] menuItems = {"Grilled Chicken", "Black Pepper Chicken", "Hickory BBQ Chicken", "Lemon Lime Chicken", "Golden Fried Chicken", "Honey Bourbon Ribs", "Grilled Fish w Herbs"};
+    int[] images = {R.drawable.grilledchicken, R.drawable.blackpepperchicken,R.drawable.hickorychicken,R.drawable.lemonlimechicken,R.drawable.goldenfriedchicken,R.drawable.honeybourbonribs, R.drawable.grilledfishwherbs};
 
     @Nullable
     @Override
