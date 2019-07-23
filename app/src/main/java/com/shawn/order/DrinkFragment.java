@@ -8,26 +8,54 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class DrinkFragment extends Fragment {
+    String[] menuItems = {"Coke", "Coke Zero", "Bottled Water", "Sprite", "Coke Float", "Sprite Float", "Ice Lemon Tea", "Apple Juice", "Orange Juice", "Lime Juice", "Plain Water", "Espresso", "Coffee Latte", "Coffee Mocha", "Hot Tea", "Hot Milk"};
+    int[] images = {R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3};
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_drink, container, false);
+        View view = inflater.inflate(R.layout.fragment_side, container, false);
 
-        String[] menuItems = {"Coke", "Coke Zero", "Bottled Water", "Sprite", "Coke Float", "Sprite Float", "Ice Lemon Tea", "Apple Juice", "Orange Juice", "Lime Juice", "Plain Water", "Espresso", "Coffee Latte", "Coffee Mocha", "Hot Tea", "Hot Milk"};
+        ListView listView = (ListView) view.findViewById(R.id.side);
 
-        ListView listView = (ListView) view.findViewById(R.id.drinks);
-
-        ArrayAdapter listViewAdapter = new ArrayAdapter<String>(
-                getActivity(),
-                android.R.layout.simple_list_item_1,
-                menuItems
-        );
-
-        listView.setAdapter(listViewAdapter);
+        CustomAdaptor customAdaptor = new CustomAdaptor();
+        listView.setAdapter(customAdaptor);
 
         return view;
+    }
+
+    class CustomAdaptor extends BaseAdapter {
+        @Override
+        public int getCount() {
+            return images.length;
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return null;
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return 0;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            View view = getLayoutInflater().inflate(R.layout.customlayout,null);
+
+            ImageView mImageView = view.findViewById(R.id.imageView);
+            TextView mTextView = view.findViewById(R.id.textView);
+
+            mImageView.setImageResource(images[position]);
+            mTextView.setText(menuItems[position]);
+            return view;
+        }
     }
 }
