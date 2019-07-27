@@ -9,6 +9,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="1dp"
         android:layout_marginTop="2dp"
-        android:id="@+id/drinks"/>
+        android:id="@+id/drink"/>
 
 </RelativeLayout>
