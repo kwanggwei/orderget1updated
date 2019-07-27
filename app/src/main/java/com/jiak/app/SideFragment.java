@@ -14,8 +14,8 @@ import android.widget.TextView;
 
 public class SideFragment extends Fragment {
 
-    String[] menuItems = {"Baked Potato", "BBQ Beans", "Corn On The Cob", "French Fries", "Garden Veggie", "Mac & Cheese", "Mashed Potato", "Onion Rings", "Potato Wedges", "Tasty Rice", "Colesaw", "House Salad", "Pasta Salad", "Potato Salad"};
-    int[] images = {R.drawable.image2,R.drawable.image2,R.drawable.image2,R.drawable.image2,R.drawable.image2,R.drawable.image2,R.drawable.image2,R.drawable.image2,R.drawable.image2,R.drawable.image2,R.drawable.image2,R.drawable.image2,R.drawable.image2,R.drawable.image2};
+    String[] menuItems = {"Baked Potato", "BBQ Beans", "Corn On The Cob", "French Fries", "Garden Veggie", "Mac & Cheese", "Mashed Potato", "Onion Rings", "Potato Wedges"};
+    int[] images = {R.drawable.bakedpotato,R.drawable.bbqbeans,R.drawable.cornonthecob,R.drawable.frenchfries,R.drawable.gardenvegie,R.drawable.image2,R.drawable.mashedpotato,R.drawable.onionrings,R.drawable.potatowedges};
 
     @Nullable
     @Override

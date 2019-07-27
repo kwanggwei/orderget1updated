@@ -13,8 +13,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class DrinkFragment extends Fragment {
-    String[] menuItems = {"Coke", "Coke Zero", "Bottled Water", "Sprite", "Coke Float", "Sprite Float", "Ice Lemon Tea", "Apple Juice", "Orange Juice", "Lime Juice", "Plain Water", "Espresso", "Coffee Latte", "Coffee Mocha", "Hot Tea", "Hot Milk"};
-    int[] images = {R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3,R.drawable.image3};
+    String[] menuItems = {"Coke", "Coke Zero", "Bottled Water", "Sprite", "Coke Float", "Sprite Float", "Ice Lemon Tea", "Apple Juice", "Orange Juice", "Lime Juice"};
+    int[] images = {R.drawable.image3,R.drawable.cokezero,R.drawable.bottledwater,R.drawable.sprite,R.drawable.cokefloat,R.drawable.spirtefloat,R.drawable.icelemontea,R.drawable.applejuice,R.drawable.orangejuice,R.drawable.limejuice};
 
     @Nullable
     @Override
