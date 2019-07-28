@@ -1,6 +1,7 @@
 package com.jiak.app;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.net.Uri;
 import android.os.Bundle;
@@ -60,8 +61,12 @@ public class CartFragment extends Fragment {
         String getImageFilePath = bundle.getString("Image", "Test");
         File file = new File (getImageFilePath);
 
+        Context c = getContext();
+        String imageName = getImageFilePath.substring(0,getImageFilePath.length() - 4);
+        int id = c.getResources().getIdentifier(imageName,null,c.getPackageName());
+
         Name.setText(getName);
-        Image.setImageURI(Uri.fromFile(file));
+        Image.setImageResource(id);
     }
 
 
