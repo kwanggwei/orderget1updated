@@ -9,7 +9,7 @@ The app is a E-Menu that allows users at the restaurant, Jiak, to use it. Instea
 
 Kwang Wei - Layouts, Fragments, ListViews </br>
 Shawn - Log in / Sign up </br>
-Ainsley - 
+Ainsley - Images
 
 <img src="Screenshots/Screenshot_1564024696.png" width="150" height="200">
 Log In Screen
