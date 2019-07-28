@@ -11,30 +11,30 @@ Kwang Wei - Layouts, Fragments, ListViews </br>
 Shawn - Log in / Sign up </br>
 Ainsley - Images
 
-Log In Screen
+Log In Screen</br>
 <img src="Screenshots/Screenshot_1564024696.png" width="150" height="200">
 
-Sign Up Screen
+Sign Up Screen</br>
 <img src="Screenshots/Screenshot_1564302962.png" width="150" height="200">
 
-Home Screen
+Home Screen</br>
 <img src="Screenshots/Screenshot_1564302982.png" width="150" height="200">
 
-Main Menu
+Main Menu</br>
 <img src="Screenshots/Screenshot_1564323596.png" width="150" height="200">
 
-Side Menu
+Side Menu</br>
 <img src="Screenshots/Screenshot_1564323600.png" width="150" height="200">
 
-Drink Menu
+Drink Menu</br>
 <img src="Screenshots/Screenshot_1564323604.png" width="150" height="200">
 
-Selected Item Screen
+Selected Item Screen</br>
 <img src="Screenshots/Screenshot_1564323613.png" width="150" height="200">
 
-Add To Order Screen
+Add To Order Screen</br>
 <img src="Screenshots/Screenshot_1564323616.png" width="150" height="200">
 
-Confirmation Screen
+Confirmation Screen</br>
 <img src="Screenshots/Screenshot_1564323638.png" width="150" height="200">
 
