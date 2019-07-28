@@ -41,12 +41,15 @@ public class MainAdapter extends BaseAdapter {
         View itemView = convertView;
 
         itemView = LayoutInflater.from(context).inflate(R.layout.customlayout,parent,false);
+        String imageName = mainList.get(position).getImageFilePath();
+        String imageName2 = imageName.substring(0,imageName.length() - 4);
+        int id = context.getResources().getIdentifier(imageName2,null,context.getPackageName());
 
         TextView mainName = itemView.findViewById(R.id.textView);
         mainName.setText(mainList.get(position).getName());
 
         ImageView mainImage = itemView.findViewById(R.id.imageView);
-        mainImage.setImageResource(R.drawable.grilledchicken);
+        mainImage.setImageResource(id);
 
         return itemView;
     }

@@ -39,7 +39,7 @@ public class SideFragment extends Fragment {
         listView = view.findViewById(R.id.side);
 
         mainList.add(new Main("Baked Potato", "drawable/bakedpotato.jpg"));
-        mainList.add(new Main("BBQ Beans", "res/drawable/bbqbeans.jpg"));
+        mainList.add(new Main("BBQ Beans", "drawable/bbqbeans.jpg"));
         mainList.add(new Main("Corn On The Cob", "drawable/cornonthecob.jpg"));
         mainList.add(new Main("French Fries", "drawable/frenchfries.jpg"));
         mainList.add(new Main("Garden Veggie", "drawable/gardenvegie.jpg"));

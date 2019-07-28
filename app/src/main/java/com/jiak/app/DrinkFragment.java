@@ -39,7 +39,7 @@ public class DrinkFragment extends Fragment {
         listView = view.findViewById(R.id.drink);
 
         mainList.add(new Main("Coke", "drawable/image3.jpg"));
-        mainList.add(new Main("Coke Zero", "res/drawable/cokezero.jpg"));
+        mainList.add(new Main("Coke Zero", "drawable/cokezero.jpg"));
         mainList.add(new Main("Bottled Water", "drawable/bottledwater.jpg"));
         mainList.add(new Main("Sprite", "drawable/sprite.jpg"));
         mainList.add(new Main("Coke Float", "drawable/cokefloat.jpg"));

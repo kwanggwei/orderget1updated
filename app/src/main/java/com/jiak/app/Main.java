@@ -9,9 +9,7 @@ public class Main {
         this.filePath = filePath;
     }
 
-    public String getImageFilePath() {
-        return filePath;
-    }
+    public String  getImageFilePath() {return filePath ;}
 
     public String getName() {
         return name;
