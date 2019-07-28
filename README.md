@@ -11,29 +11,30 @@ Kwang Wei - Layouts, Fragments, ListViews </br>
 Shawn - Log in / Sign up </br>
 Ainsley - Images
 
-<img src="Screenshots/Screenshot_1564024696.png" width="150" height="200">
 Log In Screen
+<img src="Screenshots/Screenshot_1564024696.png" width="150" height="200">
 
-<img src="Screenshots/Screenshot_1564302962.png" width="150" height="200">
 Sign Up Screen
+<img src="Screenshots/Screenshot_1564302962.png" width="150" height="200">
 
-<img src="Screenshots/Screenshot_1564302982.png" width="150" height="200">
 Home Screen
+<img src="Screenshots/Screenshot_1564302982.png" width="150" height="200">
 
-<img src="Screenshots/Screenshot_1564323596.png" width="150" height="200">
 Main Menu
+<img src="Screenshots/Screenshot_1564323596.png" width="150" height="200">
 
-<img src="Screenshots/Screenshot_1564323600.png" width="150" height="200">
 Side Menu
+<img src="Screenshots/Screenshot_1564323600.png" width="150" height="200">
 
-<img src="Screenshots/Screenshot_1564323604.png" width="150" height="200">
 Drink Menu
+<img src="Screenshots/Screenshot_1564323604.png" width="150" height="200">
 
-<img src="Screenshots/Screenshot_1564323613.png" width="150" height="200">
 Selected Item Screen
+<img src="Screenshots/Screenshot_1564323613.png" width="150" height="200">
 
-<img src="Screenshots/Screenshot_1564323616.png" width="150" height="200">
 Add To Order Screen
+<img src="Screenshots/Screenshot_1564323616.png" width="150" height="200">
 
-<img src="Screenshots/Screenshot_1564323638.png" width="150" height="200">
 Confirmation Screen
+<img src="Screenshots/Screenshot_1564323638.png" width="150" height="200">
+
