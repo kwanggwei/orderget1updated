@@ -38,16 +38,16 @@ public class DrinkFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_drink, container, false);
         listView = view.findViewById(R.id.drink);
 
-        mainList.add(new Main("Coke", "drawable/image3.jpg"));
-        mainList.add(new Main("Coke Zero", "drawable/cokezero.jpg"));
-        mainList.add(new Main("Bottled Water", "drawable/bottledwater.jpg"));
-        mainList.add(new Main("Sprite", "drawable/sprite.jpg"));
-        mainList.add(new Main("Coke Float", "drawable/cokefloat.jpg"));
-        mainList.add(new Main("Sprite Float", "drawable/spirtefloat.jpg"));
-        mainList.add(new Main("Ice Lemon Tea", "drawable/icelemontea.jpg"));
-        mainList.add(new Main("Apple Juice", "drawable/applejuice.jpg"));
-        mainList.add(new Main("Orange Juice", "drawable/orangejuice.jpg"));
-        mainList.add(new Main("Lime Juice", "drawable/limejuice.jpg"));
+        mainList.add(new Main("Coke", 3,"drawable/image3.jpg"));
+        mainList.add(new Main("Coke Zero", 3,"drawable/cokezero.jpg"));
+        mainList.add(new Main("Bottled Water", 2,"drawable/bottledwater.jpg"));
+        mainList.add(new Main("Sprite", 3,"drawable/sprite.jpg"));
+        mainList.add(new Main("Coke Float", 5,"drawable/cokefloat.jpg"));
+        mainList.add(new Main("Sprite Float", 5,"drawable/spirtefloat.jpg"));
+        mainList.add(new Main("Ice Lemon Tea", 3,"drawable/icelemontea.jpg"));
+        mainList.add(new Main("Apple Juice", 4,"drawable/applejuice.jpg"));
+        mainList.add(new Main("Orange Juice", 4,"drawable/orangejuice.jpg"));
+        mainList.add(new Main("Lime Juice", 4,"drawable/limejuice.jpg"));
 
         MainAdapter adapter = new MainAdapter(view.getContext(), mainList);
         listView.setAdapter(adapter);
@@ -71,6 +71,7 @@ public class DrinkFragment extends Fragment {
                 Fragment fragment = new CartFragment();
                 Bundle bundle = new Bundle();
                 bundle.putString("Name", main.getName());
+                bundle.putInt("Cost", main.getCost());
                 bundle.putString("Image", main.getImageFilePath());
                 fragment.setArguments(bundle);
 

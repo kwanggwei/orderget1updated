@@ -39,13 +39,13 @@ public class MainFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_main, container, false);
         listView = view.findViewById(R.id.main);
 
-        mainList.add(new Main("Grilled Chicken", "drawable/grilledchicken.jpg"));
-        mainList.add(new Main("Black Pepper Chicken", "drawable/blackpepperchicken.jpg"));
-        mainList.add(new Main("Hickory BBQ Chicken", "drawable/hickorychicken.jpg"));
-        mainList.add(new Main("Lemon Lime Chicken", "drawable/lemonlimechicken.jpg"));
-        mainList.add(new Main("Golden Fried Chicken", "drawable/goldenfriedchicken.jpg"));
-        mainList.add(new Main("Honey Bourbon Ribs", "drawable/honeybourbonribs.jpg"));
-        mainList.add(new Main("Grilled Fish w Herbs", "drawable/grilledfishwherbs.jpg"));
+        mainList.add(new Main("Grilled Chicken", 13,"drawable/grilledchicken.jpg"));
+        mainList.add(new Main("Black Pepper Chicken", 13, "drawable/blackpepperchicken.jpg"));
+        mainList.add(new Main("Hickory BBQ Chicken", 14,"drawable/hickorychicken.jpg"));
+        mainList.add(new Main("Lemon Lime Chicken", 13,"drawable/lemonlimechicken.jpg"));
+        mainList.add(new Main("Golden Fried Chicken", 12,"drawable/goldenfriedchicken.jpg"));
+        mainList.add(new Main("Honey Bourbon Ribs", 17,"drawable/honeybourbonribs.jpg"));
+        mainList.add(new Main("Grilled Fish w Herbs", 16,"drawable/grilledfishwherbs.jpg"));
 
         MainAdapter adapter = new MainAdapter(view.getContext(), mainList);
         listView.setAdapter(adapter);
@@ -69,6 +69,7 @@ public class MainFragment extends Fragment {
                 Fragment fragment = new CartFragment();
                 Bundle bundle = new Bundle();
                 bundle.putString("Name", main.getName());
+                bundle.putInt("Cost", main.getCost());
                 bundle.putString("Image", main.getImageFilePath());
                 fragment.setArguments(bundle);
 

@@ -45,9 +45,15 @@ public class MainAdapter extends BaseAdapter {
         String imageName2 = imageName.substring(0,imageName.length() - 4);
         int id = context.getResources().getIdentifier(imageName2,null,context.getPackageName());
 
+        //Item Name
         TextView mainName = itemView.findViewById(R.id.textView);
         mainName.setText(mainList.get(position).getName());
 
+        //Item Price
+        TextView mainPrice = itemView.findViewById(R.id.textView2);
+        mainPrice.setText(String.valueOf(mainList.get(position).getCost()));
+
+        //Item Image
         ImageView mainImage = itemView.findViewById(R.id.imageView);
         mainImage.setImageResource(id);
 

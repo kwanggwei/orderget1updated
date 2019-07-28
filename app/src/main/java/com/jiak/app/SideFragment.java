@@ -38,15 +38,15 @@ public class SideFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_side, container, false);
         listView = view.findViewById(R.id.side);
 
-        mainList.add(new Main("Baked Potato", "drawable/bakedpotato.jpg"));
-        mainList.add(new Main("BBQ Beans", "drawable/bbqbeans.jpg"));
-        mainList.add(new Main("Corn On The Cob", "drawable/cornonthecob.jpg"));
-        mainList.add(new Main("French Fries", "drawable/frenchfries.jpg"));
-        mainList.add(new Main("Garden Veggie", "drawable/gardenvegie.jpg"));
-        mainList.add(new Main("Mac & Cheese", "drawable/image2.jpg"));
-        mainList.add(new Main("Mashed Potato", "drawable/mashedpotato.jpg"));
-        mainList.add(new Main("Onion Rings", "drawable/onionrings.jpg"));
-        mainList.add(new Main("Potato Wedges", "drawable/potatowedges.jpg"));
+        mainList.add(new Main("Baked Potato", 4,"drawable/bakedpotato.jpg"));
+        mainList.add(new Main("BBQ Beans", 4,"drawable/bbqbeans.jpg"));
+        mainList.add(new Main("Corn On The Cob", 4,"drawable/cornonthecob.jpg"));
+        mainList.add(new Main("French Fries", 6,"drawable/frenchfries.jpg"));
+        mainList.add(new Main("Garden Veggie", 5,"drawable/gardenvegie.jpg"));
+        mainList.add(new Main("Mac & Cheese", 6,"drawable/image2.jpg"));
+        mainList.add(new Main("Mashed Potato", 4,"drawable/mashedpotato.jpg"));
+        mainList.add(new Main("Onion Rings", 6,"drawable/onionrings.jpg"));
+        mainList.add(new Main("Potato Wedges", 6,"drawable/potatowedges.jpg"));
 
         MainAdapter adapter = new MainAdapter(view.getContext(), mainList);
         listView.setAdapter(adapter);
@@ -70,6 +70,7 @@ public class SideFragment extends Fragment {
                 Fragment fragment = new CartFragment();
                 Bundle bundle = new Bundle();
                 bundle.putString("Name", main.getName());
+                bundle.putInt("Cost", main.getCost());
                 bundle.putString("Image", main.getImageFilePath());
                 fragment.setArguments(bundle);
 

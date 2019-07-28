@@ -53,11 +53,13 @@ public class CartFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         TextView Name = (TextView) view.findViewById(R.id.itemname);
+        TextView Cost = (TextView) view.findViewById(R.id.itemcost);
         ImageView Image = (ImageView) view.findViewById(R.id.itemimg);
 
         Bundle bundle = this.getArguments();
 
         String getName = bundle.getString("Name", "Test");
+        int getCost = bundle.getInt("Cost");
         String getImageFilePath = bundle.getString("Image", "Test");
         File file = new File (getImageFilePath);
 
@@ -66,6 +68,7 @@ public class CartFragment extends Fragment {
         int id = c.getResources().getIdentifier(imageName,null,c.getPackageName());
 
         Name.setText(getName);
+        Cost.setText("$" +getCost);
         Image.setImageResource(id);
     }
 
