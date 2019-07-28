@@ -2,7 +2,11 @@
 
 Team Members: Tan Kwang Wei S10186878B, Shawn , Ainsley
 
-The app
+The app is a
+
+Kwang Wei - 
+Shawn - 
+Ainsley - 
 
 <img src="Screenshots/Screenshot_1564024696.png" width="150" height="200">
 Log In Screen
